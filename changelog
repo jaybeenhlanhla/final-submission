@@ -1,0 +1,17 @@
+# Changelog - Urban Style Clothing Website
+
+All notable changes and updates for this repository are logged below:
+
+## [1.2.0] - 2026-08-12
+### Added
+- Embedded location map on `contact.html` pointing to Polokwane store[span_24](start_span)[span_24](end_span).
+- Sourced high-resolution streetwear photography from Unsplash.
+
+## [1.1.0] - 2026-08-10
+### Added
+- Constructed item reservation form with size and category selection on `enquiry.html`[span_25](start_span)[span_25](end_span).
+- Formatted product pricing and streetwear categories on `products.html`[span_26](start_span)[span_26](end_span).
+
+## [1.0.0] - 2026-08-05
+### Added
+- Initialized repository with multi-page HTML semantic skeleton and interlinked header menu.
