@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUTS & GUYS | Men's Fashion Catalogue & Inventory</title>
+    <meta name="description" content="Explore the GUTS & GUYS clothing catalogue: executive suits, casual streetwear, genuine leather boots, and accessories in Polokwane.">
+    <meta name="keywords" content="mens suit collection, casual streetwear, leather oxford shoes, mens catalogue polokwane">
+    <link rel="stylesheet" href="../miscellanous/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="enquiry.html">Enquiry</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <h1>Our Apparel Catalogue</h1>
+            <p>Filter and search through our current apparel collections and footwear options.</p>
+        </section>
+
+        <!-- Search and Filter Bar -->
+        <section class="filter-bar">
+            <input type="text" id="catalogue-search" placeholder="Search by item keyword (e.g. suit, leather, hoodie)...">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="formal">Formal Wear</option>
+                <option value="casual">Casual Wear</option>
+                <option value="footwear">Footwear & Accessories</option>
+            </select>
+        </section>
+
+        <!-- Catalogue Grid -->
+        <section class="catalogue-grid">
+            <article class="card searchable-item" data-category="formal">
+                <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?auto=format&fit=crop&w=500&q=80" 
+                     alt="Executive navy two-piece suit" class="lightbox-trigger">
+                <h3 class="item-title">Executive Tailored Suit</h3>
+                <p class="item-desc">Wool blend two-piece tailored suit, available in slim-fit navy and charcoal.</p>
+            </article>
+
+            <article class="card searchable-item" data-category="casual">
+                <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=500&q=80" 
+                     alt="Men's casual heavyweight jacket" class="lightbox-trigger">
+                <h3 class="item-title">Streetwear Heavyweight Jacket</h3>
+                <p class="item-desc">Durable outerwear jacket crafted for comfort and daily urban style.</p>
+            </article>
+
+            <article class="card searchable-item" data-category="footwear">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=500&q=80" 
+                     alt="Handcrafted leather oxford shoes" class="lightbox-trigger">
+                <h3 class="item-title">Handcrafted Leather Oxfords</h3>
+                <p class="item-desc">100% full-grain leather dress shoes designed for formal elegance.</p>
+            </article>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox-modal" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" alt="Enlarged gallery view">
+            <div id="lightbox-caption"></div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 GUTS & GUYS Men's Apparel. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

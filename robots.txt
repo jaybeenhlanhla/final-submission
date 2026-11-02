@@ -1,0 +1,7 @@
+# robots.txt for GUTS & GUYS Apparel
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+
+Sitemap: https://guts-and-guys-apparel.netlify.app/sitemap.xml
