@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urban Style Clothing | Collection Menu</title>
-        <link rel="stylesheet" href="../miscellanous/style.css">
+    <title>GUTS & GUYS | Men's Fashion Catalogue & Inventory</title>
+    <meta name="description" content="Explore the GUTS & GUYS clothing catalogue: executive suits, casual streetwear, genuine leather boots, and accessories in Polokwane.">
+    <meta name="keywords" content="mens suit collection, casual streetwear, leather oxford shoes, mens catalogue polokwane">
+    <link rel="stylesheet" href="../miscellanous/style.css">
 </head>
 <body>
 
-    <!-- Header Navigation Section -->
     <header>
         <nav>
             <ul>
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
-                <li><a href="menu.html">Menu</a></li>
+                <li><a href="menu.html" class="active">Menu</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="enquiry.html">Enquiry</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -23,154 +24,58 @@
     </header>
 
     <main>
-        <section>
-            <h1>Urban Style Clothing - Apparel Menu</h1>
-            <p>Explore our full collection of streetwear, outerwear, footwear, and accessories.</p>
+        <section class="page-title">
+            <h1>Our Apparel Catalogue</h1>
+            <p>Filter and search through our current apparel collections and footwear options.</p>
         </section>
 
-        <hr>
-
-        <!-- Category 1: Streetwear & Outerwear -->
-        <section>
-            <h2>Streetwear & Outerwear</h2>
-            
-            <table border="1" cellpadding="10" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Item Preview</th>
-                        <th>Product Details</th>
-                        <th>Price</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=200&q=80" alt="Leather Jacket" width="150">
-                        </td>
-                        <td>
-                            <h3>Oversized Biker Leather Jacket</h3>
-                            <p><strong>Category:</strong> Outerwear</p>
-                            <p>Premium faux leather crafted with hardware zippers and an edgy urban silhouette.</p>
-                        </td>
-                        <td>R 1,499</td>
-                        <td><a href="enquiry.html">Enquire Now</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=200&q=80" alt="Cotton Hoodie" width="150">
-                        </td>
-                        <td>
-                            <h3>Heavyweight Cotton Hoodie</h3>
-                            <p><strong>Category:</strong> Streetwear</p>
-                            <p>400 GSM luxury fleece hoodie designed for comfort and sleek everyday wear.</p>
-                        </td>
-                        <td>R 899</td>
-                        <td><a href="enquiry.html">Enquire Now</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=200&q=80" alt="Graphic Tee" width="150">
-                        </td>
-                        <td>
-                            <h3>Acid Wash Graphic Tee</h3>
-                            <p><strong>Category:</strong> Tops</p>
-                            <p>Vintage wash 100% cotton tee featuring custom urban typography artwork.</p>
-                        </td>
-                        <td>R 450</td>
-                        <td><a href="enquiry.html">Enquire Now</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=200&q=80" alt="Denim Jeans" width="150">
-                        </td>
-                        <td>
-                            <h3>Slim-Fit Distressed Denim</h3>
-                            <p><strong>Category:</strong> Bottoms</p>
-                            <p>Tailored stretch denim engineered with custom distressing and tapered ankles.</p>
-                        </td>
-                        <td>R 950</td>
-                        <td><a href="enquiry.html">Enquire Now</a></td>
-                    </tr>
-                </tbody>
-            </table>
+        <!-- Search and Filter Bar -->
+        <section class="filter-bar">
+            <input type="text" id="catalogue-search" placeholder="Search by item keyword (e.g. suit, leather, hoodie)...">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="formal">Formal Wear</option>
+                <option value="casual">Casual Wear</option>
+                <option value="footwear">Footwear & Accessories</option>
+            </select>
         </section>
 
-        <br>
+        <!-- Catalogue Grid -->
+        <section class="catalogue-grid">
+            <article class="card searchable-item" data-category="formal">
+                <img src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?auto=format&fit=crop&w=500&q=80" 
+                     alt="Executive navy two-piece suit" class="lightbox-trigger">
+                <h3 class="item-title">Executive Tailored Suit</h3>
+                <p class="item-desc">Wool blend two-piece tailored suit, available in slim-fit navy and charcoal.</p>
+            </article>
 
-        <!-- Category 2: Footwear & Accessories -->
-        <section>
-            <h2>Footwear & Accessories</h2>
+            <article class="card searchable-item" data-category="casual">
+                <img src="https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=500&q=80" 
+                     alt="Men's casual heavyweight jacket" class="lightbox-trigger">
+                <h3 class="item-title">Streetwear Heavyweight Jacket</h3>
+                <p class="item-desc">Durable outerwear jacket crafted for comfort and daily urban style.</p>
+            </article>
 
-            <table border="1" cellpadding="10" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Item Preview</th>
-                        <th>Product Details</th>
-                        <th>Price</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=200&q=80" alt="High Top Sneakers" width="150">
-                        </td>
-                        <td>
-                            <h3>Retro High-Top Sneakers</h3>
-                            <p><strong>Category:</strong> Footwear</p>
-                            <p>Classic street culture footwear built with durable leather and cushioned soles.</p>
-                        </td>
-                        <td>R 1,899</td>
-                        <td><a href="enquiry.html">Enquire Now</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=200&q=80" alt="Crossbody Bag" width="150">
-                        </td>
-                        <td>
-                            <h3>Matte Black Crossbody Bag</h3>
-                            <p><strong>Category:</strong> Accessories</p>
-                            <p>Water-resistant tactical bag with adjustable straps and multiple compartments.</p>
-                        </td>
-                        <td>R 650</td>
-                        <td><a href="enquiry.html">Enquire Now</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=200&q=80" alt="Sunglasses" width="150">
-                        </td>
-                        <td>
-                            <h3>Square Frame Sunglasses</h3>
-                            <p><strong>Category:</strong> Eyewear</p>
-                            <p>UV400 protection with bold dark frames designed to complete any urban fit.</p>
-                        </td>
-                        <td>R 380</td>
-                        <td><a href="enquiry.html">Enquire Now</a></td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=200&q=80" alt="Snapback Cap" width="150">
-                        </td>
-                        <td>
-                            <h3>Signature Embroidered Cap</h3>
-                            <p><strong>Category:</strong> Headwear</p>
-                            <p>Structured 6-panel snapback cap featuring 3D embroidered Urban Style branding.</p>
-                        </td>
-                        <td>R 320</td>
-                        <td><a href="enquiry.html">Enquire Now</a></td>
-                    </tr>
-                </tbody>
-            </table>
+            <article class="card searchable-item" data-category="footwear">
+                <img src="https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=500&q=80" 
+                     alt="Handcrafted leather oxford shoes" class="lightbox-trigger">
+                <h3 class="item-title">Handcrafted Leather Oxfords</h3>
+                <p class="item-desc">100% full-grain leather dress shoes designed for formal elegance.</p>
+            </article>
         </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox-modal" class="lightbox">
+            <span class="lightbox-close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" alt="Enlarged gallery view">
+            <div id="lightbox-caption"></div>
+        </div>
     </main>
 
-    <br><hr>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2026 Urban Style Clothing. All Rights Reserved.</p>
+    <footer class="main-footer">
+        <p>&copy; 2026 GUTS & GUYS Men's Apparel. All Rights Reserved.</p>
     </footer>
 
+    <script src="../js/main.js"></script>
 </body>
 </html>
